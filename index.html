@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f2e8">
+    <meta name="description"
+        content="A cozy little space for your autumn bucket list, tiny joys, and seasonal memories.">
+    <title>Little Autumn — A Cozy Bucket List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-shell">
+
+        <nav class="navbar">
+            <a href="#" class="brand">
+                <span class="brand-icon">✿</span>
+                little autumn
+            </a>
+            <span class="nav-note">A little season of joy 🍂</span>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <span class="eyebrow">YOUR COZY CORNER OF THE INTERNET</span>
+                    <h1>Fall in love<br>with the <em>little things.</em></h1>
+                    <p>
+                        A slower morning, a warm drink, golden leaves.
+                        Make room for the small things that make this
+                        season feel like magic.
+                    </p>
+                    <a href="#bucket-list" class="primary-button">
+                        Explore my bucket list <span>↓</span>
+                    </a>
+                </div>
+
+                <div class="hero-art" role="img" aria-label="Cozy autumn illustration">
+                    <div class="sun-circle"></div>
+                    <div class="art-label">SWEATER<br>WEATHER</div>
+                    <div class="art-leaf leaf-one">🍂</div>
+                    <div class="art-leaf leaf-two">🍁</div>
+                    <div class="art-leaf leaf-three">🍂</div>
+                    <div class="pumpkin pumpkin-back">🎃</div>
+                    <div class="pumpkin pumpkin-front">🎃</div>
+                    <div class="art-caption">collect little moments ♡</div>
+                </div>
+            </section>
+
+            <section class="welcome-strip">
+                <div>
+                    <span class="strip-icon">☕</span>
+                    <span>Make yourself a warm drink.</span>
+                </div>
+                <span class="strip-divider">✳</span>
+                <div>
+                    <span class="strip-icon">🍁</span>
+                    <span>Take life one little moment at a time.</span>
+                </div>
+            </section>
+
+            <section class="list-section" id="bucket-list">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">YOUR SEASON, YOUR WAY</span>
+                        <h2>The autumn bucket list</h2>
+                        <p>Little adventures to make this fall unforgettable.</p>
+                    </div>
+                    <div class="progress-circle" id="progress-circle">
+                        <span id="progress-number">0%</span>
+                        <small>complete</small>
+                    </div>
+                </div>
+
+                <div class="progress-track">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+
+                <div class="list-toolbar">
+                    <div class="filter-buttons" aria-label="Filter activities">
+                        <button class="filter-button active" data-filter="all">All ideas</button>
+                        <button class="filter-button" data-filter="active">To do</button>
+                        <button class="filter-button" data-filter="done">Completed</button>
+                    </div>
+                    <span class="item-count" id="item-count">0 little plans</span>
+                </div>
+
+                <div class="activity-grid" id="activity-grid"></div>
+
+                <div class="empty-state hidden" id="empty-state">
+                    <span>🍄</span>
+                    <h3>No little plans here yet</h3>
+                    <p>Add a new idea and make it part of your season.</p>
+                </div>
+
+                <div class="add-section">
+                    <div class="add-heading">
+                        <span class="tiny-sparkle">✳</span>
+                        <div>
+                            <h3>Add a little adventure</h3>
+                            <p>Your autumn, your rules.</p>
+                        </div>
+                    </div>
+
+                    <form id="activity-form">
+                        <label for="activity-input">What would you love to do?</label>
+                        <div class="input-row">
+                            <input type="text" id="activity-input" placeholder="e.g. Visit a little bookshop..."
+                                maxlength="100" required>
+                            <button type="submit" class="add-button">
+                                <span>+</span> Add idea
+                            </button>
+                        </div>
+                        <p class="form-hint">A little idea can become a lovely memory. ♡</p>
+                    </form>
+                </div>
+            </section>
+
+            <section class="quote-card">
+                <span class="quote-mark">“</span>
+                <blockquote>
+                    There is something magical about slowing down
+                    and noticing the world change around you.
+                </blockquote>
+                <span class="quote-credit">A LITTLE REMINDER FOR YOU</span>
+                <div class="quote-decoration">✳ 🍂 ✳</div>
+            </section>
+        </main>
+
+        <footer>
+            <a href="#" class="footer-brand">little autumn <span>♡</span></a>
+            <p>Made for slow days and golden leaves.</p>
+            <p class="footer-small">Take a breath. You're right where you need to be.</p>
+        </footer>
+
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
